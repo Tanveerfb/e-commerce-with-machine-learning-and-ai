@@ -25,9 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <body
         style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+        suppressHydrationWarning
       >
         <AppShell>{children}</AppShell>
       </body>

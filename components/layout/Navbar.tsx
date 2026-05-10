@@ -89,6 +89,9 @@ export default function Navbar({ onOpenAuth }: NavbarProps) {
               <Button href="/products" color="inherit" size="small">
                 Products
               </Button>
+              <Button href="/seller-dashboard" color="inherit" size="small">
+                Seller Dashboard
+              </Button>
             </Box>
 
             {/* Right Actions */}
