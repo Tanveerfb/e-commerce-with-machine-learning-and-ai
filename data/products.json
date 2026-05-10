@@ -1,6 +1,8 @@
 [
   {
     "id": "prod_001",
+    "category": "Electronics",
+    "subCategory": "Headphones & Earphones",
     "item_name": "Wireless Noise-Cancelling Headphones",
     "price": 129.99,
     "seller_id": "seller_101",
@@ -33,6 +35,8 @@
   },
   {
     "id": "prod_002",
+    "category": "Electronics",
+    "subCategory": "Keyboards",
     "item_name": "Mechanical Gaming Keyboard",
     "price": 89.99,
     "seller_id": "seller_102",
@@ -59,6 +63,8 @@
   },
   {
     "id": "prod_003",
+    "category": "Electronics",
+    "subCategory": "Televisions",
     "item_name": "4K Ultra HD Smart TV 55\"",
     "price": 649.99,
     "seller_id": "seller_103",
@@ -91,6 +97,8 @@
   },
   {
     "id": "prod_004",
+    "category": "Footwear",
+    "subCategory": "Athletic Shoes",
     "item_name": "Running Shoes - Lightweight Mesh",
     "price": 74.99,
     "seller_id": "seller_104",
@@ -117,6 +125,8 @@
   },
   {
     "id": "prod_005",
+    "category": "Kitchen & Dining",
+    "subCategory": "Drinkware",
     "item_name": "Stainless Steel Water Bottle 32oz",
     "price": 24.99,
     "seller_id": "seller_105",
@@ -135,6 +145,8 @@
   },
   {
     "id": "prod_006",
+    "category": "Sports & Fitness",
+    "subCategory": "Yoga & Pilates",
     "item_name": "Yoga Mat with Carrying Strap",
     "price": 34.99,
     "seller_id": "seller_106",
@@ -161,6 +173,8 @@
   },
   {
     "id": "prod_007",
+    "category": "Electronics",
+    "subCategory": "Speakers",
     "item_name": "Portable Bluetooth Speaker",
     "price": 49.99,
     "seller_id": "seller_101",
@@ -193,6 +207,8 @@
   },
   {
     "id": "prod_008",
+    "category": "Kitchen & Dining",
+    "subCategory": "Small Kitchen Appliances",
     "item_name": "Air Fryer 5.8 Quart",
     "price": 99.99,
     "seller_id": "seller_107",
@@ -219,6 +235,8 @@
   },
   {
     "id": "prod_009",
+    "category": "Clothing",
+    "subCategory": "Men's Outerwear",
     "item_name": "Men's Classic Denim Jacket",
     "price": 59.99,
     "seller_id": "seller_108",
@@ -245,6 +263,8 @@
   },
   {
     "id": "prod_010",
+    "category": "Furniture",
+    "subCategory": "Office Furniture",
     "item_name": "Ergonomic Office Chair",
     "price": 249.99,
     "seller_id": "seller_109",
@@ -277,6 +297,8 @@
   },
   {
     "id": "prod_011",
+    "category": "Kitchen & Dining",
+    "subCategory": "Small Kitchen Appliances",
     "item_name": "Instant Pot 7-in-1 Pressure Cooker",
     "price": 79.99,
     "seller_id": "seller_107",
@@ -300,6 +322,8 @@
   },
   {
     "id": "prod_012",
+    "category": "Electronics",
+    "subCategory": "Charging Accessories",
     "item_name": "Wireless Charging Pad",
     "price": 19.99,
     "seller_id": "seller_102",
@@ -323,6 +347,8 @@
   },
   {
     "id": "prod_013",
+    "category": "Home Decor",
+    "subCategory": "Candles & Aromatherapy",
     "item_name": "Scented Soy Candle Set (3-pack)",
     "price": 28.99,
     "seller_id": "seller_110",
@@ -349,6 +375,8 @@
   },
   {
     "id": "prod_014",
+    "category": "Bags & Luggage",
+    "subCategory": "Backpacks",
     "item_name": "Laptop Backpack with USB Port",
     "price": 45.99,
     "seller_id": "seller_111",
@@ -381,6 +409,8 @@
   },
   {
     "id": "prod_015",
+    "category": "Beauty & Personal Care",
+    "subCategory": "Skincare",
     "item_name": "Skincare Vitamin C Serum 30ml",
     "price": 22.99,
     "seller_id": "seller_112",
@@ -404,6 +434,8 @@
   },
   {
     "id": "prod_016",
+    "category": "Electronics",
+    "subCategory": "Smartwatches & Wearables",
     "item_name": "Smart Watch Fitness Tracker",
     "price": 109.99,
     "seller_id": "seller_103",
@@ -436,6 +468,8 @@
   },
   {
     "id": "prod_017",
+    "category": "Kitchen & Dining",
+    "subCategory": "Cookware",
     "item_name": "Cast Iron Skillet 12-inch",
     "price": 39.99,
     "seller_id": "seller_107",
@@ -459,6 +493,8 @@
   },
   {
     "id": "prod_018",
+    "category": "Clothing",
+    "subCategory": "Women's Activewear",
     "item_name": "Women's High-Waist Leggings",
     "price": 34.99,
     "seller_id": "seller_108",
@@ -485,6 +521,8 @@
   },
   {
     "id": "prod_019",
+    "category": "Kitchen & Dining",
+    "subCategory": "Cutting Boards",
     "item_name": "Bamboo Cutting Board Set",
     "price": 29.99,
     "seller_id": "seller_110",
@@ -508,6 +546,8 @@
   },
   {
     "id": "prod_020",
+    "category": "Electronics",
+    "subCategory": "Computer Accessories",
     "item_name": "USB-C Hub 7-in-1 Adapter",
     "price": 35.99,
     "seller_id": "seller_102",
@@ -534,6 +574,8 @@
   },
   {
     "id": "prod_021",
+    "category": "Home & Bedding",
+    "subCategory": "Blankets & Throws",
     "item_name": "Weighted Blanket 15lbs",
     "price": 64.99,
     "seller_id": "seller_109",
@@ -563,6 +605,8 @@
   },
   {
     "id": "prod_022",
+    "category": "Beauty & Personal Care",
+    "subCategory": "Oral Care",
     "item_name": "Electric Toothbrush with 3 Heads",
     "price": 44.99,
     "seller_id": "seller_112",
@@ -586,6 +630,8 @@
   },
   {
     "id": "prod_023",
+    "category": "Kitchen & Dining",
+    "subCategory": "Coffee & Tea",
     "item_name": "Coffee Grinder Electric Burr",
     "price": 54.99,
     "seller_id": "seller_107",
@@ -612,6 +658,8 @@
   },
   {
     "id": "prod_024",
+    "category": "Sports & Fitness",
+    "subCategory": "Strength Training",
     "item_name": "Resistance Bands Set (5 levels)",
     "price": 18.99,
     "seller_id": "seller_106",
@@ -635,6 +683,8 @@
   },
   {
     "id": "prod_025",
+    "category": "Kitchen & Dining",
+    "subCategory": "Cookware",
     "item_name": "Stainless Steel Cookware Set 10-piece",
     "price": 189.99,
     "seller_id": "seller_107",
@@ -661,6 +711,8 @@
   },
   {
     "id": "prod_026",
+    "category": "Garden & Plants",
+    "subCategory": "Indoor Plants",
     "item_name": "Succulents Plant Set (6-pack)",
     "price": 21.99,
     "seller_id": "seller_113",
@@ -684,6 +736,8 @@
   },
   {
     "id": "prod_027",
+    "category": "Electronics",
+    "subCategory": "Storage Devices",
     "item_name": "Portable SSD 1TB USB-C",
     "price": 99.99,
     "seller_id": "seller_102",
@@ -707,6 +761,8 @@
   },
   {
     "id": "prod_028",
+    "category": "Sports & Fitness",
+    "subCategory": "Recovery & Wellness",
     "item_name": "Foam Roller for Muscle Recovery",
     "price": 26.99,
     "seller_id": "seller_106",
@@ -730,6 +786,8 @@
   },
   {
     "id": "prod_029",
+    "category": "Home Decor",
+    "subCategory": "Candles & Aromatherapy",
     "item_name": "Aromatherapy Essential Oil Diffuser",
     "price": 32.99,
     "seller_id": "seller_110",
@@ -756,6 +814,8 @@
   },
   {
     "id": "prod_030",
+    "category": "Toys & Games",
+    "subCategory": "Building & Construction",
     "item_name": "Kids' Building Blocks 120-piece",
     "price": 36.99,
     "seller_id": "seller_114",
@@ -780,6 +840,8 @@
   },
   {
     "id": "prod_031",
+    "category": "Clothing",
+    "subCategory": "Men's Bottoms",
     "item_name": "Men's Slim Fit Chino Pants",
     "price": 42.99,
     "seller_id": "seller_108",
@@ -806,6 +868,8 @@
   },
   {
     "id": "prod_032",
+    "category": "Kitchen & Dining",
+    "subCategory": "Small Kitchen Appliances",
     "item_name": "Electric Kettle 1.7L",
     "price": 31.99,
     "seller_id": "seller_107",
@@ -829,6 +893,8 @@
   },
   {
     "id": "prod_033",
+    "category": "Electronics",
+    "subCategory": "Computer Peripherals",
     "item_name": "Gaming Mouse RGB 16000 DPI",
     "price": 52.99,
     "seller_id": "seller_101",
@@ -855,6 +921,8 @@
   },
   {
     "id": "prod_034",
+    "category": "Garden & Plants",
+    "subCategory": "Planters & Pots",
     "item_name": "Ceramic Planter Pot Set",
     "price": 27.99,
     "seller_id": "seller_113",
@@ -878,6 +946,8 @@
   },
   {
     "id": "prod_035",
+    "category": "Health & Supplements",
+    "subCategory": "Sports Nutrition",
     "item_name": "Protein Powder Chocolate 2lb",
     "price": 36.99,
     "seller_id": "seller_115",
@@ -907,6 +977,8 @@
   },
   {
     "id": "prod_036",
+    "category": "Home Decor",
+    "subCategory": "Lighting",
     "item_name": "Desk Lamp LED with USB Charging",
     "price": 38.99,
     "seller_id": "seller_109",
@@ -930,6 +1002,8 @@
   },
   {
     "id": "prod_037",
+    "category": "Accessories",
+    "subCategory": "Eyewear",
     "item_name": "Sunglasses Polarized UV400",
     "price": 29.99,
     "seller_id": "seller_111",
@@ -956,6 +1030,8 @@
   },
   {
     "id": "prod_038",
+    "category": "Arts & Crafts",
+    "subCategory": "Painting Supplies",
     "item_name": "Acrylic Paint Set 24 Colors",
     "price": 23.99,
     "seller_id": "seller_116",
@@ -979,6 +1055,8 @@
   },
   {
     "id": "prod_039",
+    "category": "Automotive",
+    "subCategory": "Car Accessories",
     "item_name": "Car Phone Mount Universal",
     "price": 14.99,
     "seller_id": "seller_103",
@@ -1002,6 +1080,8 @@
   },
   {
     "id": "prod_040",
+    "category": "Furniture",
+    "subCategory": "Bookcases & Shelving",
     "item_name": "Wooden Bookshelf 5-tier",
     "price": 119.99,
     "seller_id": "seller_109",
@@ -1028,6 +1108,8 @@
   },
   {
     "id": "prod_041",
+    "category": "Kitchen & Dining",
+    "subCategory": "Food Storage",
     "item_name": "Stainless Steel Lunch Box Bento",
     "price": 19.99,
     "seller_id": "seller_110",
@@ -1051,6 +1133,8 @@
   },
   {
     "id": "prod_042",
+    "category": "Electronics",
+    "subCategory": "Cables & Adapters",
     "item_name": "HDMI Cable 6ft 4K",
     "price": 9.99,
     "seller_id": "seller_102",
@@ -1069,6 +1153,8 @@
   },
   {
     "id": "prod_043",
+    "category": "Beauty & Personal Care",
+    "subCategory": "Skincare",
     "item_name": "Anti-Aging Night Cream 50ml",
     "price": 33.99,
     "seller_id": "seller_112",
@@ -1092,6 +1178,8 @@
   },
   {
     "id": "prod_044",
+    "category": "Sports & Fitness",
+    "subCategory": "Strength Training",
     "item_name": "Dumbbell Set Adjustable 50lb",
     "price": 159.99,
     "seller_id": "seller_106",
@@ -1124,6 +1212,8 @@
   },
   {
     "id": "prod_045",
+    "category": "Toys & Games",
+    "subCategory": "Educational Toys",
     "item_name": "Kids' Science Experiment Kit",
     "price": 29.99,
     "seller_id": "seller_114",
@@ -1147,6 +1237,8 @@
   },
   {
     "id": "prod_046",
+    "category": "Home & Bedding",
+    "subCategory": "Pillowcases & Pillow Covers",
     "item_name": "Silk Pillowcase Queen Size",
     "price": 27.99,
     "seller_id": "seller_110",
@@ -1170,6 +1262,8 @@
   },
   {
     "id": "prod_047",
+    "category": "Toys & Games",
+    "subCategory": "Board Games",
     "item_name": "Board Game Strategy Family",
     "price": 44.99,
     "seller_id": "seller_114",
@@ -1193,6 +1287,8 @@
   },
   {
     "id": "prod_048",
+    "category": "Health & Supplements",
+    "subCategory": "Vitamins & Minerals",
     "item_name": "Multivitamin Daily Supplement 90 count",
     "price": 18.99,
     "seller_id": "seller_115",
@@ -1216,6 +1312,8 @@
   },
   {
     "id": "prod_049",
+    "category": "Electronics",
+    "subCategory": "Photography & Video",
     "item_name": "Ring Light 10-inch with Tripod",
     "price": 42.99,
     "seller_id": "seller_116",
@@ -1242,6 +1340,8 @@
   },
   {
     "id": "prod_050",
+    "category": "Kitchen & Dining",
+    "subCategory": "Coffee & Tea",
     "item_name": "Cold Brew Coffee Maker 1L",
     "price": 32.99,
     "seller_id": "seller_107",
