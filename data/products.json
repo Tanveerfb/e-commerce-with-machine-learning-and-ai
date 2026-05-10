@@ -1,0 +1,1272 @@
+[
+  {
+    "id": "prod_001",
+    "item_name": "Wireless Noise-Cancelling Headphones",
+    "price": 129.99,
+    "seller_id": "seller_101",
+    "quantity": 85,
+    "costPerItem": 52.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod001a/600/600",
+      "https://picsum.photos/seed/prod001b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_201",
+        "product_id": "prod_001",
+        "rating": 5,
+        "comment": "Amazing sound quality and great noise cancellation!"
+      },
+      {
+        "user_id": "user_202",
+        "product_id": "prod_001",
+        "rating": 4,
+        "comment": "Very comfortable for long sessions."
+      },
+      {
+        "user_id": "user_203",
+        "product_id": "prod_001",
+        "rating": 3,
+        "comment": "Good but battery life could be better."
+      }
+    ]
+  },
+  {
+    "id": "prod_002",
+    "item_name": "Mechanical Gaming Keyboard",
+    "price": 89.99,
+    "seller_id": "seller_102",
+    "quantity": 120,
+    "costPerItem": 34.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod002a/600/600",
+      "https://picsum.photos/seed/prod002b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_204",
+        "product_id": "prod_002",
+        "rating": 5,
+        "comment": "Clicky keys are so satisfying to type on!"
+      },
+      {
+        "user_id": "user_205",
+        "product_id": "prod_002",
+        "rating": 4,
+        "comment": "RGB lighting is beautiful."
+      }
+    ]
+  },
+  {
+    "id": "prod_003",
+    "item_name": "4K Ultra HD Smart TV 55\"",
+    "price": 649.99,
+    "seller_id": "seller_103",
+    "quantity": 30,
+    "costPerItem": 320.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod003a/600/600",
+      "https://picsum.photos/seed/prod003b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_206",
+        "product_id": "prod_003",
+        "rating": 5,
+        "comment": "Picture quality is stunning."
+      },
+      {
+        "user_id": "user_207",
+        "product_id": "prod_003",
+        "rating": 4,
+        "comment": "Easy setup, smart features work great."
+      },
+      {
+        "user_id": "user_208",
+        "product_id": "prod_003",
+        "rating": 5,
+        "comment": "Best TV I've ever owned."
+      }
+    ]
+  },
+  {
+    "id": "prod_004",
+    "item_name": "Running Shoes - Lightweight Mesh",
+    "price": 74.99,
+    "seller_id": "seller_104",
+    "quantity": 200,
+    "costPerItem": 28.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod004a/600/600",
+      "https://picsum.photos/seed/prod004b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_209",
+        "product_id": "prod_004",
+        "rating": 5,
+        "comment": "Super lightweight and breathable!"
+      },
+      {
+        "user_id": "user_210",
+        "product_id": "prod_004",
+        "rating": 3,
+        "comment": "Runs a bit small, order a size up."
+      }
+    ]
+  },
+  {
+    "id": "prod_005",
+    "item_name": "Stainless Steel Water Bottle 32oz",
+    "price": 24.99,
+    "seller_id": "seller_105",
+    "quantity": 350,
+    "costPerItem": 7.5,
+    "photoURL": ["https://picsum.photos/seed/prod005a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_211",
+        "product_id": "prod_005",
+        "rating": 5,
+        "comment": "Keeps drinks cold for 24 hours, love it!"
+      },
+      { "user_id": "user_212", "product_id": "prod_005", "rating": 4 }
+    ]
+  },
+  {
+    "id": "prod_006",
+    "item_name": "Yoga Mat with Carrying Strap",
+    "price": 34.99,
+    "seller_id": "seller_106",
+    "quantity": 180,
+    "costPerItem": 11.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod006a/600/600",
+      "https://picsum.photos/seed/prod006b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_213",
+        "product_id": "prod_006",
+        "rating": 4,
+        "comment": "Good grip and cushioning."
+      },
+      {
+        "user_id": "user_214",
+        "product_id": "prod_006",
+        "rating": 5,
+        "comment": "Carrying strap is very convenient."
+      }
+    ]
+  },
+  {
+    "id": "prod_007",
+    "item_name": "Portable Bluetooth Speaker",
+    "price": 49.99,
+    "seller_id": "seller_101",
+    "quantity": 95,
+    "costPerItem": 18.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod007a/600/600",
+      "https://picsum.photos/seed/prod007b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_215",
+        "product_id": "prod_007",
+        "rating": 4,
+        "comment": "Great sound for its size."
+      },
+      {
+        "user_id": "user_216",
+        "product_id": "prod_007",
+        "rating": 5,
+        "comment": "Perfect for outdoor trips."
+      },
+      {
+        "user_id": "user_217",
+        "product_id": "prod_007",
+        "rating": 3,
+        "comment": "Bass could be stronger."
+      }
+    ]
+  },
+  {
+    "id": "prod_008",
+    "item_name": "Air Fryer 5.8 Quart",
+    "price": 99.99,
+    "seller_id": "seller_107",
+    "quantity": 60,
+    "costPerItem": 42.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod008a/600/600",
+      "https://picsum.photos/seed/prod008b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_218",
+        "product_id": "prod_008",
+        "rating": 5,
+        "comment": "Makes everything crispy and delicious!"
+      },
+      {
+        "user_id": "user_219",
+        "product_id": "prod_008",
+        "rating": 4,
+        "comment": "Easy to clean and use."
+      }
+    ]
+  },
+  {
+    "id": "prod_009",
+    "item_name": "Men's Classic Denim Jacket",
+    "price": 59.99,
+    "seller_id": "seller_108",
+    "quantity": 75,
+    "costPerItem": 22.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod009a/600/600",
+      "https://picsum.photos/seed/prod009b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_220",
+        "product_id": "prod_009",
+        "rating": 4,
+        "comment": "Great quality denim."
+      },
+      {
+        "user_id": "user_221",
+        "product_id": "prod_009",
+        "rating": 3,
+        "comment": "Fit is a bit boxy for my taste."
+      }
+    ]
+  },
+  {
+    "id": "prod_010",
+    "item_name": "Ergonomic Office Chair",
+    "price": 249.99,
+    "seller_id": "seller_109",
+    "quantity": 40,
+    "costPerItem": 110.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod010a/600/600",
+      "https://picsum.photos/seed/prod010b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_222",
+        "product_id": "prod_010",
+        "rating": 5,
+        "comment": "No more back pain after long work sessions!"
+      },
+      {
+        "user_id": "user_223",
+        "product_id": "prod_010",
+        "rating": 4,
+        "comment": "Very adjustable and comfortable."
+      },
+      {
+        "user_id": "user_224",
+        "product_id": "prod_010",
+        "rating": 5,
+        "comment": "Worth every penny."
+      }
+    ]
+  },
+  {
+    "id": "prod_011",
+    "item_name": "Instant Pot 7-in-1 Pressure Cooker",
+    "price": 79.99,
+    "seller_id": "seller_107",
+    "quantity": 55,
+    "costPerItem": 33.0,
+    "photoURL": ["https://picsum.photos/seed/prod011a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_225",
+        "product_id": "prod_011",
+        "rating": 5,
+        "comment": "Changed the way I cook! So versatile."
+      },
+      {
+        "user_id": "user_226",
+        "product_id": "prod_011",
+        "rating": 4,
+        "comment": "Learning curve at first but worth it."
+      }
+    ]
+  },
+  {
+    "id": "prod_012",
+    "item_name": "Wireless Charging Pad",
+    "price": 19.99,
+    "seller_id": "seller_102",
+    "quantity": 400,
+    "costPerItem": 5.5,
+    "photoURL": ["https://picsum.photos/seed/prod012a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_227",
+        "product_id": "prod_012",
+        "rating": 4,
+        "comment": "Works great with my iPhone."
+      },
+      {
+        "user_id": "user_228",
+        "product_id": "prod_012",
+        "rating": 3,
+        "comment": "Charges a bit slow but convenient."
+      }
+    ]
+  },
+  {
+    "id": "prod_013",
+    "item_name": "Scented Soy Candle Set (3-pack)",
+    "price": 28.99,
+    "seller_id": "seller_110",
+    "quantity": 220,
+    "costPerItem": 9.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod013a/600/600",
+      "https://picsum.photos/seed/prod013b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_229",
+        "product_id": "prod_013",
+        "rating": 5,
+        "comment": "Lovely scents, perfect for relaxation."
+      },
+      {
+        "user_id": "user_230",
+        "product_id": "prod_013",
+        "rating": 5,
+        "comment": "Bought as a gift and they loved it!"
+      }
+    ]
+  },
+  {
+    "id": "prod_014",
+    "item_name": "Laptop Backpack with USB Port",
+    "price": 45.99,
+    "seller_id": "seller_111",
+    "quantity": 140,
+    "costPerItem": 16.5,
+    "photoURL": [
+      "https://picsum.photos/seed/prod014a/600/600",
+      "https://picsum.photos/seed/prod014b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_231",
+        "product_id": "prod_014",
+        "rating": 4,
+        "comment": "Very spacious and well-organized."
+      },
+      {
+        "user_id": "user_232",
+        "product_id": "prod_014",
+        "rating": 4,
+        "comment": "USB charging port is super useful."
+      },
+      {
+        "user_id": "user_233",
+        "product_id": "prod_014",
+        "rating": 3,
+        "comment": "Straps could use more padding."
+      }
+    ]
+  },
+  {
+    "id": "prod_015",
+    "item_name": "Skincare Vitamin C Serum 30ml",
+    "price": 22.99,
+    "seller_id": "seller_112",
+    "quantity": 300,
+    "costPerItem": 7.0,
+    "photoURL": ["https://picsum.photos/seed/prod015a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_234",
+        "product_id": "prod_015",
+        "rating": 5,
+        "comment": "My skin is glowing after 2 weeks!"
+      },
+      {
+        "user_id": "user_235",
+        "product_id": "prod_015",
+        "rating": 4,
+        "comment": "Nice texture, absorbs quickly."
+      }
+    ]
+  },
+  {
+    "id": "prod_016",
+    "item_name": "Smart Watch Fitness Tracker",
+    "price": 109.99,
+    "seller_id": "seller_103",
+    "quantity": 70,
+    "costPerItem": 44.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod016a/600/600",
+      "https://picsum.photos/seed/prod016b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_236",
+        "product_id": "prod_016",
+        "rating": 4,
+        "comment": "Tracks everything accurately."
+      },
+      {
+        "user_id": "user_237",
+        "product_id": "prod_016",
+        "rating": 5,
+        "comment": "Battery lasts 5 days easily."
+      },
+      {
+        "user_id": "user_238",
+        "product_id": "prod_016",
+        "rating": 3,
+        "comment": "App could be more intuitive."
+      }
+    ]
+  },
+  {
+    "id": "prod_017",
+    "item_name": "Cast Iron Skillet 12-inch",
+    "price": 39.99,
+    "seller_id": "seller_107",
+    "quantity": 90,
+    "costPerItem": 15.0,
+    "photoURL": ["https://picsum.photos/seed/prod017a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_239",
+        "product_id": "prod_017",
+        "rating": 5,
+        "comment": "Pre-seasoned and ready to use!"
+      },
+      {
+        "user_id": "user_240",
+        "product_id": "prod_017",
+        "rating": 4,
+        "comment": "Heavy but heats evenly."
+      }
+    ]
+  },
+  {
+    "id": "prod_018",
+    "item_name": "Women's High-Waist Leggings",
+    "price": 34.99,
+    "seller_id": "seller_108",
+    "quantity": 250,
+    "costPerItem": 12.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod018a/600/600",
+      "https://picsum.photos/seed/prod018b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_241",
+        "product_id": "prod_018",
+        "rating": 5,
+        "comment": "So comfortable and flattering!"
+      },
+      {
+        "user_id": "user_242",
+        "product_id": "prod_018",
+        "rating": 4,
+        "comment": "Great for workouts and casual wear."
+      }
+    ]
+  },
+  {
+    "id": "prod_019",
+    "item_name": "Bamboo Cutting Board Set",
+    "price": 29.99,
+    "seller_id": "seller_110",
+    "quantity": 160,
+    "costPerItem": 10.0,
+    "photoURL": ["https://picsum.photos/seed/prod019a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_243",
+        "product_id": "prod_019",
+        "rating": 4,
+        "comment": "Nice and sturdy, great value."
+      },
+      {
+        "user_id": "user_244",
+        "product_id": "prod_019",
+        "rating": 5,
+        "comment": "The set of 3 sizes is perfect."
+      }
+    ]
+  },
+  {
+    "id": "prod_020",
+    "item_name": "USB-C Hub 7-in-1 Adapter",
+    "price": 35.99,
+    "seller_id": "seller_102",
+    "quantity": 110,
+    "costPerItem": 13.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod020a/600/600",
+      "https://picsum.photos/seed/prod020b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_245",
+        "product_id": "prod_020",
+        "rating": 5,
+        "comment": "Essential for my MacBook, works flawlessly."
+      },
+      {
+        "user_id": "user_246",
+        "product_id": "prod_020",
+        "rating": 4,
+        "comment": "All ports work great."
+      }
+    ]
+  },
+  {
+    "id": "prod_021",
+    "item_name": "Weighted Blanket 15lbs",
+    "price": 64.99,
+    "seller_id": "seller_109",
+    "quantity": 75,
+    "costPerItem": 26.0,
+    "photoURL": ["https://picsum.photos/seed/prod021a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_247",
+        "product_id": "prod_021",
+        "rating": 5,
+        "comment": "Helps me sleep so much better!"
+      },
+      {
+        "user_id": "user_248",
+        "product_id": "prod_021",
+        "rating": 4,
+        "comment": "Very cozy and well-made."
+      },
+      {
+        "user_id": "user_249",
+        "product_id": "prod_021",
+        "rating": 5,
+        "comment": "Worth every cent for the sleep quality."
+      }
+    ]
+  },
+  {
+    "id": "prod_022",
+    "item_name": "Electric Toothbrush with 3 Heads",
+    "price": 44.99,
+    "seller_id": "seller_112",
+    "quantity": 130,
+    "costPerItem": 16.0,
+    "photoURL": ["https://picsum.photos/seed/prod022a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_250",
+        "product_id": "prod_022",
+        "rating": 5,
+        "comment": "Dentist approved! My teeth feel so clean."
+      },
+      {
+        "user_id": "user_251",
+        "product_id": "prod_022",
+        "rating": 4,
+        "comment": "Long battery life and multiple modes."
+      }
+    ]
+  },
+  {
+    "id": "prod_023",
+    "item_name": "Coffee Grinder Electric Burr",
+    "price": 54.99,
+    "seller_id": "seller_107",
+    "quantity": 65,
+    "costPerItem": 21.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod023a/600/600",
+      "https://picsum.photos/seed/prod023b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_252",
+        "product_id": "prod_023",
+        "rating": 5,
+        "comment": "Consistent grind every time."
+      },
+      {
+        "user_id": "user_253",
+        "product_id": "prod_023",
+        "rating": 4,
+        "comment": "Quiet for a burr grinder."
+      }
+    ]
+  },
+  {
+    "id": "prod_024",
+    "item_name": "Resistance Bands Set (5 levels)",
+    "price": 18.99,
+    "seller_id": "seller_106",
+    "quantity": 380,
+    "costPerItem": 5.5,
+    "photoURL": ["https://picsum.photos/seed/prod024a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_254",
+        "product_id": "prod_024",
+        "rating": 4,
+        "comment": "Great for home workouts."
+      },
+      {
+        "user_id": "user_255",
+        "product_id": "prod_024",
+        "rating": 5,
+        "comment": "Good range of resistance levels."
+      }
+    ]
+  },
+  {
+    "id": "prod_025",
+    "item_name": "Stainless Steel Cookware Set 10-piece",
+    "price": 189.99,
+    "seller_id": "seller_107",
+    "quantity": 35,
+    "costPerItem": 78.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod025a/600/600",
+      "https://picsum.photos/seed/prod025b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_256",
+        "product_id": "prod_025",
+        "rating": 5,
+        "comment": "Professional quality at home!"
+      },
+      {
+        "user_id": "user_257",
+        "product_id": "prod_025",
+        "rating": 4,
+        "comment": "Heats evenly, easy to clean."
+      }
+    ]
+  },
+  {
+    "id": "prod_026",
+    "item_name": "Succulents Plant Set (6-pack)",
+    "price": 21.99,
+    "seller_id": "seller_113",
+    "quantity": 100,
+    "costPerItem": 6.5,
+    "photoURL": ["https://picsum.photos/seed/prod026a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_258",
+        "product_id": "prod_026",
+        "rating": 5,
+        "comment": "All arrived healthy and well-packaged."
+      },
+      {
+        "user_id": "user_259",
+        "product_id": "prod_026",
+        "rating": 4,
+        "comment": "Adorable little plants!"
+      }
+    ]
+  },
+  {
+    "id": "prod_027",
+    "item_name": "Portable SSD 1TB USB-C",
+    "price": 99.99,
+    "seller_id": "seller_102",
+    "quantity": 80,
+    "costPerItem": 42.0,
+    "photoURL": ["https://picsum.photos/seed/prod027a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_260",
+        "product_id": "prod_027",
+        "rating": 5,
+        "comment": "Blazing fast transfer speeds!"
+      },
+      {
+        "user_id": "user_261",
+        "product_id": "prod_027",
+        "rating": 5,
+        "comment": "Compact and durable."
+      }
+    ]
+  },
+  {
+    "id": "prod_028",
+    "item_name": "Foam Roller for Muscle Recovery",
+    "price": 26.99,
+    "seller_id": "seller_106",
+    "quantity": 195,
+    "costPerItem": 9.0,
+    "photoURL": ["https://picsum.photos/seed/prod028a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_262",
+        "product_id": "prod_028",
+        "rating": 4,
+        "comment": "Really helps with post-workout soreness."
+      },
+      {
+        "user_id": "user_263",
+        "product_id": "prod_028",
+        "rating": 3,
+        "comment": "Works fine but nothing special."
+      }
+    ]
+  },
+  {
+    "id": "prod_029",
+    "item_name": "Aromatherapy Essential Oil Diffuser",
+    "price": 32.99,
+    "seller_id": "seller_110",
+    "quantity": 115,
+    "costPerItem": 11.5,
+    "photoURL": [
+      "https://picsum.photos/seed/prod029a/600/600",
+      "https://picsum.photos/seed/prod029b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_264",
+        "product_id": "prod_029",
+        "rating": 5,
+        "comment": "Makes the whole room smell amazing."
+      },
+      {
+        "user_id": "user_265",
+        "product_id": "prod_029",
+        "rating": 4,
+        "comment": "LED light colors are a nice touch."
+      }
+    ]
+  },
+  {
+    "id": "prod_030",
+    "item_name": "Kids' Building Blocks 120-piece",
+    "price": 36.99,
+    "seller_id": "seller_114",
+    "quantity": 145,
+    "costPerItem": 13.0,
+    "photoURL": ["https://picsum.photos/seed/prod030a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_266",
+        "product_id": "prod_030",
+        "rating": 5,
+        "comment": "My kids play with this for hours!"
+      },
+      {
+        "user_id": "user_267",
+        "product_id": "prod_030",
+        "rating": 5,
+        "comment": "Safe materials and bright colors."
+      },
+      { "user_id": "user_268", "product_id": "prod_030", "rating": 4 }
+    ]
+  },
+  {
+    "id": "prod_031",
+    "item_name": "Men's Slim Fit Chino Pants",
+    "price": 42.99,
+    "seller_id": "seller_108",
+    "quantity": 170,
+    "costPerItem": 15.5,
+    "photoURL": [
+      "https://picsum.photos/seed/prod031a/600/600",
+      "https://picsum.photos/seed/prod031b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_269",
+        "product_id": "prod_031",
+        "rating": 4,
+        "comment": "Great fit, very comfortable fabric."
+      },
+      {
+        "user_id": "user_270",
+        "product_id": "prod_031",
+        "rating": 4,
+        "comment": "Good quality for the price."
+      }
+    ]
+  },
+  {
+    "id": "prod_032",
+    "item_name": "Electric Kettle 1.7L",
+    "price": 31.99,
+    "seller_id": "seller_107",
+    "quantity": 90,
+    "costPerItem": 12.0,
+    "photoURL": ["https://picsum.photos/seed/prod032a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_271",
+        "product_id": "prod_032",
+        "rating": 5,
+        "comment": "Boils water in under 2 minutes!"
+      },
+      {
+        "user_id": "user_272",
+        "product_id": "prod_032",
+        "rating": 4,
+        "comment": "Quiet and easy to clean."
+      }
+    ]
+  },
+  {
+    "id": "prod_033",
+    "item_name": "Gaming Mouse RGB 16000 DPI",
+    "price": 52.99,
+    "seller_id": "seller_101",
+    "quantity": 95,
+    "costPerItem": 19.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod033a/600/600",
+      "https://picsum.photos/seed/prod033b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_273",
+        "product_id": "prod_033",
+        "rating": 5,
+        "comment": "Very precise and responsive!"
+      },
+      {
+        "user_id": "user_274",
+        "product_id": "prod_033",
+        "rating": 4,
+        "comment": "Comfortable grip for long gaming sessions."
+      }
+    ]
+  },
+  {
+    "id": "prod_034",
+    "item_name": "Ceramic Planter Pot Set",
+    "price": 27.99,
+    "seller_id": "seller_113",
+    "quantity": 125,
+    "costPerItem": 9.5,
+    "photoURL": ["https://picsum.photos/seed/prod034a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_275",
+        "product_id": "prod_034",
+        "rating": 4,
+        "comment": "Beautiful design, great drainage."
+      },
+      {
+        "user_id": "user_276",
+        "product_id": "prod_034",
+        "rating": 5,
+        "comment": "Sturdy and stylish."
+      }
+    ]
+  },
+  {
+    "id": "prod_035",
+    "item_name": "Protein Powder Chocolate 2lb",
+    "price": 36.99,
+    "seller_id": "seller_115",
+    "quantity": 200,
+    "costPerItem": 14.0,
+    "photoURL": ["https://picsum.photos/seed/prod035a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_277",
+        "product_id": "prod_035",
+        "rating": 4,
+        "comment": "Mixes well and tastes great."
+      },
+      {
+        "user_id": "user_278",
+        "product_id": "prod_035",
+        "rating": 3,
+        "comment": "A bit sweet but good macros."
+      },
+      {
+        "user_id": "user_279",
+        "product_id": "prod_035",
+        "rating": 5,
+        "comment": "My go-to post-workout shake!"
+      }
+    ]
+  },
+  {
+    "id": "prod_036",
+    "item_name": "Desk Lamp LED with USB Charging",
+    "price": 38.99,
+    "seller_id": "seller_109",
+    "quantity": 110,
+    "costPerItem": 14.5,
+    "photoURL": ["https://picsum.photos/seed/prod036a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_280",
+        "product_id": "prod_036",
+        "rating": 5,
+        "comment": "Adjustable brightness and color temperature, love it."
+      },
+      {
+        "user_id": "user_281",
+        "product_id": "prod_036",
+        "rating": 4,
+        "comment": "USB port is super convenient."
+      }
+    ]
+  },
+  {
+    "id": "prod_037",
+    "item_name": "Sunglasses Polarized UV400",
+    "price": 29.99,
+    "seller_id": "seller_111",
+    "quantity": 220,
+    "costPerItem": 9.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod037a/600/600",
+      "https://picsum.photos/seed/prod037b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_282",
+        "product_id": "prod_037",
+        "rating": 4,
+        "comment": "Excellent polarization, very clear."
+      },
+      {
+        "user_id": "user_283",
+        "product_id": "prod_037",
+        "rating": 5,
+        "comment": "Stylish and affordable."
+      }
+    ]
+  },
+  {
+    "id": "prod_038",
+    "item_name": "Acrylic Paint Set 24 Colors",
+    "price": 23.99,
+    "seller_id": "seller_116",
+    "quantity": 175,
+    "costPerItem": 7.5,
+    "photoURL": ["https://picsum.photos/seed/prod038a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_284",
+        "product_id": "prod_038",
+        "rating": 4,
+        "comment": "Vibrant colors that blend well."
+      },
+      {
+        "user_id": "user_285",
+        "product_id": "prod_038",
+        "rating": 5,
+        "comment": "Perfect for beginners and pros alike."
+      }
+    ]
+  },
+  {
+    "id": "prod_039",
+    "item_name": "Car Phone Mount Universal",
+    "price": 14.99,
+    "seller_id": "seller_103",
+    "quantity": 450,
+    "costPerItem": 4.0,
+    "photoURL": ["https://picsum.photos/seed/prod039a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_286",
+        "product_id": "prod_039",
+        "rating": 4,
+        "comment": "Holds phone securely, easy to install."
+      },
+      {
+        "user_id": "user_287",
+        "product_id": "prod_039",
+        "rating": 3,
+        "comment": "Works fine but loosens over time."
+      }
+    ]
+  },
+  {
+    "id": "prod_040",
+    "item_name": "Wooden Bookshelf 5-tier",
+    "price": 119.99,
+    "seller_id": "seller_109",
+    "quantity": 25,
+    "costPerItem": 52.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod040a/600/600",
+      "https://picsum.photos/seed/prod040b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_288",
+        "product_id": "prod_040",
+        "rating": 4,
+        "comment": "Solid build, looks great in my office."
+      },
+      {
+        "user_id": "user_289",
+        "product_id": "prod_040",
+        "rating": 5,
+        "comment": "Assembly was straightforward."
+      }
+    ]
+  },
+  {
+    "id": "prod_041",
+    "item_name": "Stainless Steel Lunch Box Bento",
+    "price": 19.99,
+    "seller_id": "seller_110",
+    "quantity": 280,
+    "costPerItem": 6.5,
+    "photoURL": ["https://picsum.photos/seed/prod041a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_290",
+        "product_id": "prod_041",
+        "rating": 5,
+        "comment": "Leak-proof and keeps food fresh!"
+      },
+      {
+        "user_id": "user_291",
+        "product_id": "prod_041",
+        "rating": 4,
+        "comment": "Great size for meal prep."
+      }
+    ]
+  },
+  {
+    "id": "prod_042",
+    "item_name": "HDMI Cable 6ft 4K",
+    "price": 9.99,
+    "seller_id": "seller_102",
+    "quantity": 600,
+    "costPerItem": 2.5,
+    "photoURL": ["https://picsum.photos/seed/prod042a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_292",
+        "product_id": "prod_042",
+        "rating": 5,
+        "comment": "Crystal clear 4K signal."
+      },
+      { "user_id": "user_293", "product_id": "prod_042", "rating": 4 }
+    ]
+  },
+  {
+    "id": "prod_043",
+    "item_name": "Anti-Aging Night Cream 50ml",
+    "price": 33.99,
+    "seller_id": "seller_112",
+    "quantity": 160,
+    "costPerItem": 11.0,
+    "photoURL": ["https://picsum.photos/seed/prod043a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_294",
+        "product_id": "prod_043",
+        "rating": 4,
+        "comment": "Skin feels noticeably softer after a week."
+      },
+      {
+        "user_id": "user_295",
+        "product_id": "prod_043",
+        "rating": 5,
+        "comment": "Great texture, not greasy at all."
+      }
+    ]
+  },
+  {
+    "id": "prod_044",
+    "item_name": "Dumbbell Set Adjustable 50lb",
+    "price": 159.99,
+    "seller_id": "seller_106",
+    "quantity": 20,
+    "costPerItem": 68.0,
+    "photoURL": [
+      "https://picsum.photos/seed/prod044a/600/600",
+      "https://picsum.photos/seed/prod044b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_296",
+        "product_id": "prod_044",
+        "rating": 5,
+        "comment": "Replaced my entire dumbbell rack!"
+      },
+      {
+        "user_id": "user_297",
+        "product_id": "prod_044",
+        "rating": 5,
+        "comment": "Quick weight change mechanism is great."
+      },
+      {
+        "user_id": "user_298",
+        "product_id": "prod_044",
+        "rating": 4,
+        "comment": "Bulky but excellent quality."
+      }
+    ]
+  },
+  {
+    "id": "prod_045",
+    "item_name": "Kids' Science Experiment Kit",
+    "price": 29.99,
+    "seller_id": "seller_114",
+    "quantity": 90,
+    "costPerItem": 10.5,
+    "photoURL": ["https://picsum.photos/seed/prod045a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_299",
+        "product_id": "prod_045",
+        "rating": 5,
+        "comment": "Kids absolutely loved this!"
+      },
+      {
+        "user_id": "user_300",
+        "product_id": "prod_045",
+        "rating": 4,
+        "comment": "Educational and entertaining."
+      }
+    ]
+  },
+  {
+    "id": "prod_046",
+    "item_name": "Silk Pillowcase Queen Size",
+    "price": 27.99,
+    "seller_id": "seller_110",
+    "quantity": 200,
+    "costPerItem": 9.0,
+    "photoURL": ["https://picsum.photos/seed/prod046a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_301",
+        "product_id": "prod_046",
+        "rating": 5,
+        "comment": "Hair and skin feel amazing in the morning!"
+      },
+      {
+        "user_id": "user_302",
+        "product_id": "prod_046",
+        "rating": 4,
+        "comment": "Slippery at first but great quality."
+      }
+    ]
+  },
+  {
+    "id": "prod_047",
+    "item_name": "Board Game Strategy Family",
+    "price": 44.99,
+    "seller_id": "seller_114",
+    "quantity": 65,
+    "costPerItem": 17.0,
+    "photoURL": ["https://picsum.photos/seed/prod047a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_303",
+        "product_id": "prod_047",
+        "rating": 5,
+        "comment": "Fantastic family game night staple!"
+      },
+      {
+        "user_id": "user_304",
+        "product_id": "prod_047",
+        "rating": 4,
+        "comment": "Rules take time to learn but fun after."
+      }
+    ]
+  },
+  {
+    "id": "prod_048",
+    "item_name": "Multivitamin Daily Supplement 90 count",
+    "price": 18.99,
+    "seller_id": "seller_115",
+    "quantity": 320,
+    "costPerItem": 6.0,
+    "photoURL": ["https://picsum.photos/seed/prod048a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_305",
+        "product_id": "prod_048",
+        "rating": 4,
+        "comment": "Easy to swallow and no aftertaste."
+      },
+      {
+        "user_id": "user_306",
+        "product_id": "prod_048",
+        "rating": 3,
+        "comment": "Decent quality for the price."
+      }
+    ]
+  },
+  {
+    "id": "prod_049",
+    "item_name": "Ring Light 10-inch with Tripod",
+    "price": 42.99,
+    "seller_id": "seller_116",
+    "quantity": 105,
+    "costPerItem": 16.5,
+    "photoURL": [
+      "https://picsum.photos/seed/prod049a/600/600",
+      "https://picsum.photos/seed/prod049b/600/600"
+    ],
+    "reviews": [
+      {
+        "user_id": "user_307",
+        "product_id": "prod_049",
+        "rating": 5,
+        "comment": "Perfect for video calls and content creation."
+      },
+      {
+        "user_id": "user_308",
+        "product_id": "prod_049",
+        "rating": 4,
+        "comment": "Good brightness range and color modes."
+      }
+    ]
+  },
+  {
+    "id": "prod_050",
+    "item_name": "Cold Brew Coffee Maker 1L",
+    "price": 32.99,
+    "seller_id": "seller_107",
+    "quantity": 80,
+    "costPerItem": 12.0,
+    "photoURL": ["https://picsum.photos/seed/prod050a/600/600"],
+    "reviews": [
+      {
+        "user_id": "user_309",
+        "product_id": "prod_050",
+        "rating": 5,
+        "comment": "Makes the smoothest cold brew at home!"
+      },
+      {
+        "user_id": "user_310",
+        "product_id": "prod_050",
+        "rating": 4,
+        "comment": "Easy to use and clean."
+      },
+      {
+        "user_id": "user_311",
+        "product_id": "prod_050",
+        "rating": 5,
+        "comment": "Saves me so much money on coffee shop visits."
+      }
+    ]
+  }
+]
