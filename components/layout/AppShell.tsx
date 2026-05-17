@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { SellerAuthProvider } from "@/contexts/SellerAuthContext";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AuthModal from "@/components/auth/AuthModal";
@@ -44,12 +45,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AuthProvider>
-          <Navbar onOpenAuth={() => setAuthOpen(true)} />
-          {/* Toolbar spacer so content starts below the fixed AppBar */}
-          <div style={{ minHeight: 64 }} />
-          <main style={{ flex: 1 }}>{children}</main>
-          <Footer />
-          <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
+          <SellerAuthProvider>
+            <Navbar onOpenAuth={() => setAuthOpen(true)} />
+            {/* Toolbar spacer so content starts below the fixed AppBar */}
+            <div style={{ minHeight: 64 }} />
+            <main style={{ flex: 1 }}>{children}</main>
+            <Footer />
+            <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
+          </SellerAuthProvider>
         </AuthProvider>
       </ThemeProvider>
     </AppRouterCacheProvider>

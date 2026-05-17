@@ -18,17 +18,32 @@ Use Material UI when creating or updating pages. the documentation is inside mui
 
 ```
 app/              – Next.js App Router pages & root layout
+  api/
+    seller-auth/  – POST/GET/DELETE route: validates creds, sets httpOnly cookie
   products/       – Products listing page (search, filter, sort, paginate)
   products/[id]/  – Product detail page (images, reviews tab, rating breakdown)
+  sales-dashboard/– Seller sales dashboard (protected by SellerGuard)
 components/
   auth/           – AuthModal (login/signup dialog)
-  layout/         – AppShell (ThemeProvider + AuthProvider wrapper), Navbar, Footer
+  layout/         – AppShell (ThemeProvider + AuthProvider + SellerAuthProvider), Navbar, Footer
   products/       – ProductCard, ReviewsModal
-contexts/         – AuthContext (Firebase Auth provider + useAuth hook)
+  seller/         – SellerGuard (route gate), SellerLoginModal
+contexts/         – AuthContext (Firebase), SellerAuthContext (dummy seller auth)
 lib/              – firebase.ts (singleton Firebase app + auth instance)
 types/            – product.ts (Product, Review interfaces)
-data/             – Static JSON data (products.json)
+data/
+  products.json   – Static product data
+  seller_auth/
+    creds.json    – Seller login credentials (read server-side only)
 ```
+
+## Seller / Admin Auth (2nd auth layer)
+
+- Completely separate from Firebase auth — never touches `AuthContext`.
+- API route `app/api/seller-auth/route.ts` reads `data/seller_auth/creds.json` server-side; credentials are never sent to the client bundle.
+- On success sets an `httpOnly`, `sameSite=lax` session cookie `seller_session`.
+- `SellerAuthProvider` (in `AppShell`) checks the cookie on mount via `GET /api/seller-auth` and exposes `{ isSellerAuthed, loading, sellerLogin, sellerLogout }`.
+- Wrap any admin/seller page with `<SellerGuard>` — it shows a lock screen + `SellerLoginModal` until authenticated.
 
 ## Firebase / Auth
 
