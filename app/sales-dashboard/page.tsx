@@ -26,7 +26,9 @@ import {
   useTheme,
   Avatar,
   Rating,
-  Link as MuiLink
+  Link as MuiLink,
+  alpha,
+  Fade
 } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -232,13 +234,63 @@ export default function SalesDashboardPage() {
   const cardStyle = {
     height: '100%',
     borderRadius: 4,
-    boxShadow: '0 4px 24px 0 rgba(0,0,0,0.03)',
+    bgcolor: 'background.paper',
+    boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.04)',
     border: '1px solid',
     borderColor: 'divider',
-    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    position: 'relative',
+    overflow: 'hidden',
     '&:hover': {
-      transform: 'translateY(-4px)',
-      boxShadow: '0 12px 32px 0 rgba(0,0,0,0.08)',
+      transform: 'translateY(-5px)',
+      boxShadow: '0px 20px 40px rgba(0, 0, 0, 0.08)',
+      borderColor: 'primary.light',
+    },
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '4px',
+      background: 'linear-gradient(90deg, #1976d2, #9c27b0)',
+      opacity: 0,
+      transition: 'opacity 0.3s ease',
+    },
+    '&:hover::before': {
+      opacity: 1,
+    }
+  };
+
+  const getKpiCardStyle = (color: string) => ({
+    ...cardStyle,
+    background: `linear-gradient(145deg, #ffffff 60%, ${color} 140%)`,
+    '&::before': {
+      display: 'none',
+    }
+  });
+
+  const modernToggleStyle = {
+    p: 0.5,
+    bgcolor: (theme: any) => alpha(theme.palette.action.hover, 0.5),
+    borderRadius: '12px !important',
+    '& .MuiToggleButton-root': {
+      border: 'none',
+      borderRadius: '8px !important',
+      mx: 0.5,
+      px: 2,
+      py: 0.5,
+      textTransform: 'none',
+      fontWeight: 600,
+      color: 'text.secondary',
+      '&.Mui-selected': {
+        bgcolor: 'background.paper',
+        color: 'primary.main',
+        boxShadow: '0px 2px 8px rgba(0,0,0,0.1)',
+        '&:hover': {
+          bgcolor: 'background.paper',
+        }
+      }
     }
   };
 
@@ -297,23 +349,57 @@ export default function SalesDashboardPage() {
   };
 
   return (
+    <Fade in={true} timeout={800}>
     <Box sx={{ p: { xs: 2, md: 4 }, maxWidth: 1400, mx: 'auto', mt: { xs: 8, md: 10 } }}>
       {/* Global Header */}
-      <Stack sx={{ flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', alignItems: { xs: 'flex-start', md: 'center' }, mb: 5, gap: 2 }}>
-        <Box>
-          <Typography variant="h4" sx={{ fontWeight: 800, mb: 1, background: 'linear-gradient(45deg, #1976d2, #9c27b0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Sales Dashboard
-          </Typography>
-          <Typography variant="subtitle1" sx={{ color: 'text.secondary' }}>
-            Predictive analytics and current inventory performance
-          </Typography>
-        </Box>
-        <Tooltip title="Export Report">
-          <Button variant="outlined" startIcon={<DownloadIcon />} sx={{ borderRadius: 2 }}>
-            Export Full Report
-          </Button>
-        </Tooltip>
-      </Stack>
+      <Box sx={{ 
+        position: 'relative', 
+        mb: 6, 
+        p: 4, 
+        borderRadius: 4, 
+        bgcolor: alpha(theme.palette.primary.main, 0.03),
+        border: '1px solid',
+        borderColor: alpha(theme.palette.primary.main, 0.1),
+        overflow: 'hidden'
+      }}>
+        <Box sx={{
+          position: 'absolute',
+          top: -100,
+          right: -100,
+          width: 300,
+          height: 300,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(156,39,176,0.1) 0%, rgba(255,255,255,0) 70%)',
+          zIndex: 0
+        }} />
+        <Stack sx={{ position: 'relative', zIndex: 1, flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', alignItems: { xs: 'flex-start', md: 'center' }, gap: 2 }}>
+          <Box>
+            <Typography variant="h3" sx={{ fontWeight: 800, mb: 1, background: 'linear-gradient(45deg, #1976d2, #9c27b0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', letterSpacing: '-0.02em' }}>
+              Sales Dashboard
+            </Typography>
+            <Typography variant="subtitle1" sx={{ color: 'text.secondary', fontWeight: 500 }}>
+              Predictive analytics and real-time inventory performance
+            </Typography>
+          </Box>
+          <Tooltip title="Download comprehensive CSV report">
+            <Button 
+              variant="contained" 
+              startIcon={<DownloadIcon />} 
+              sx={{ 
+                borderRadius: 2, 
+                textTransform: 'none', 
+                fontWeight: 600,
+                boxShadow: '0 8px 16px rgba(25, 118, 210, 0.24)',
+                '&:hover': {
+                  boxShadow: '0 12px 24px rgba(25, 118, 210, 0.32)',
+                }
+              }}
+            >
+              Export Report
+            </Button>
+          </Tooltip>
+        </Stack>
+      </Box>
 
       {/* =====================================
           SECTION 1: SALES FORECAST OVERVIEW
@@ -326,10 +412,10 @@ export default function SalesDashboardPage() {
       <Grid container spacing={3} sx={{ mb: 4 }}>
         {kpiData.map((kpi, index) => (
           <Grid size={{ xs: 12, sm: 6, md: 2.4 }} key={index}>
-            <Card sx={cardStyle}>
+            <Card sx={getKpiCardStyle(kpi.color)}>
               <CardContent>
                 <Stack sx={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', mb: 2 }}>
-                  <Avatar sx={{ bgcolor: kpi.color, width: 40, height: 40 }}>
+                  <Avatar sx={{ bgcolor: '#ffffff', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', width: 48, height: 48 }}>
                     {kpi.icon}
                   </Avatar>
                   <Chip 
@@ -337,13 +423,13 @@ export default function SalesDashboardPage() {
                     size="small" 
                     color={kpi.isUp ? "success" : "error"} 
                     icon={kpi.isUp ? <TrendingUpIcon /> : <TrendingDownIcon />} 
-                    sx={{ fontWeight: 600, borderRadius: 1 }}
+                    sx={{ fontWeight: 700, borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}
                   />
                 </Stack>
-                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 500, mb: 0.5 }}>
+                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', mb: 0.5 }}>
                   {kpi.title}
                 </Typography>
-                <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                <Typography variant="h4" sx={{ fontWeight: 800, color: 'text.primary', letterSpacing: '-0.02em' }}>
                   {kpi.value}
                 </Typography>
               </CardContent>
@@ -362,15 +448,14 @@ export default function SalesDashboardPage() {
                   <ShowChartIcon color="primary" /> Historical vs Forecasted Sales
                 </Typography>
                 <ToggleButtonGroup
-                  color="primary"
                   value={forecastTimeframe}
                   exclusive
                   onChange={handleForecastTimeframeChange}
-                  size="small"
+                  sx={modernToggleStyle}
                 >
-                  <ToggleButton value="month" sx={{ px: 2 }}>Month</ToggleButton>
-                  <ToggleButton value="quarter" sx={{ px: 2 }}>Quarter</ToggleButton>
-                  <ToggleButton value="year" sx={{ px: 2 }}>Year</ToggleButton>
+                  <ToggleButton value="month" disableRipple>Month</ToggleButton>
+                  <ToggleButton value="quarter" disableRipple>Quarter</ToggleButton>
+                  <ToggleButton value="year" disableRipple>Year</ToggleButton>
                 </ToggleButtonGroup>
               </Stack>
               <Box sx={{ height: 350 }}>
@@ -456,18 +541,18 @@ export default function SalesDashboardPage() {
       <Grid container spacing={3} sx={{ mb: 6 }}>
         <Grid size={{ xs: 12 }}>
           <Card sx={cardStyle}>
-            <CardContent>
-              <Typography variant="h6" sx={{ fontWeight: 600, mb: 3 }}>Top Products Forecast</Typography>
-              <TableContainer component={Paper} elevation={0} sx={{ border: '1px solid', borderColor: 'divider', borderRadius: 2 }}>
+            <CardContent sx={{ p: { xs: 2, sm: 3 } }}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 3 }}>Top Products Forecast</Typography>
+              <TableContainer component={Paper} elevation={0} sx={{ borderRadius: 3, border: '1px solid', borderColor: alpha(theme.palette.divider, 0.5), overflow: 'hidden' }}>
                 <Table sx={{ minWidth: 650 }} aria-label="forecast table">
                   <TableHead>
-                    <TableRow sx={{ bgcolor: 'action.hover' }}>
-                      <TableCell sx={{ fontWeight: 600 }}>Product Name</TableCell>
-                      <TableCell sx={{ fontWeight: 600 }}>Category</TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 600 }}>Current Sales</TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 600 }}>Forecasted Sales</TableCell>
-                      <TableCell align="center" sx={{ fontWeight: 600 }}>Trend</TableCell>
-                      <TableCell align="center" sx={{ fontWeight: 600 }}>Performance</TableCell>
+                    <TableRow sx={{ bgcolor: alpha(theme.palette.primary.main, 0.04) }}>
+                      <TableCell sx={{ fontWeight: 700, color: 'text.secondary' }}>Product Name</TableCell>
+                      <TableCell sx={{ fontWeight: 700, color: 'text.secondary' }}>Category</TableCell>
+                      <TableCell align="right" sx={{ fontWeight: 700, color: 'text.secondary' }}>Current Sales</TableCell>
+                      <TableCell align="right" sx={{ fontWeight: 700, color: 'text.secondary' }}>Forecasted Sales</TableCell>
+                      <TableCell align="center" sx={{ fontWeight: 700, color: 'text.secondary' }}>Trend</TableCell>
+                      <TableCell align="center" sx={{ fontWeight: 700, color: 'text.secondary' }}>Performance</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -485,7 +570,7 @@ export default function SalesDashboardPage() {
                             label={product.performance} 
                             size="small" 
                             color={product.performance === 'Excellent' ? 'success' : product.performance === 'Good' ? 'primary' : product.performance === 'Needs Attention' ? 'warning' : 'error'} 
-                            sx={{ borderRadius: 1, minWidth: 100 }}
+                            sx={{ borderRadius: '8px', minWidth: 100, fontWeight: 600 }}
                           />
                         </TableCell>
                       </TableRow>
@@ -503,13 +588,16 @@ export default function SalesDashboardPage() {
       {/* =====================================
           SECTION 2: SELLER INVENTORY & DASHBOARD
       ===================================== */}
-      <Stack sx={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-        <Typography variant="h5" sx={{ fontWeight: 700, display: 'flex', alignItems: 'center', gap: 1 }}>
-          <Inventory2Icon color="primary" /> Seller Inventory & Performance
+      <Stack sx={{ flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'space-between', alignItems: { xs: 'flex-start', md: 'center' }, mb: 4, gap: 2 }}>
+        <Typography variant="h5" sx={{ fontWeight: 800, display: 'flex', alignItems: 'center', gap: 1.5 }}>
+          <Inventory2Icon color="primary" sx={{ fontSize: 32 }} /> Seller Inventory & Performance
         </Typography>
-        <Typography variant="subtitle1" sx={{ color: 'text.secondary' }}>
-          Seller ID: {sellerData.sellerId} | {sellerData.name}
-        </Typography>
+        <Chip 
+          label={`Seller: ${sellerData.name} (${sellerData.sellerId})`} 
+          variant="outlined" 
+          color="primary" 
+          sx={{ fontWeight: 600, borderRadius: 2, bgcolor: alpha(theme.palette.primary.main, 0.05) }} 
+        />
       </Stack>
 
       <Grid container spacing={4} sx={{ mb: 4 }}>
@@ -520,15 +608,14 @@ export default function SalesDashboardPage() {
               <Stack sx={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 600 }}>Sales Trends</Typography>
                 <ToggleButtonGroup
-                  color="primary"
                   value={sellerTimeframe}
                   exclusive
                   onChange={handleSellerTimeframeChange}
-                  size="small"
+                  sx={modernToggleStyle}
                 >
-                  <ToggleButton value="day">Day</ToggleButton>
-                  <ToggleButton value="month">Month</ToggleButton>
-                  <ToggleButton value="year">Year</ToggleButton>
+                  <ToggleButton value="day" disableRipple>Day</ToggleButton>
+                  <ToggleButton value="month" disableRipple>Month</ToggleButton>
+                  <ToggleButton value="year" disableRipple>Year</ToggleButton>
                 </ToggleButtonGroup>
               </Stack>
               <Box sx={{ height: 300 }}>
@@ -574,19 +661,19 @@ export default function SalesDashboardPage() {
       <Grid container spacing={4}>
         <Grid size={{ xs: 12 }}>
           <Card sx={cardStyle}>
-            <CardContent>
-              <Typography variant="h6" sx={{ fontWeight: 600, mb: 3 }}>Product Catalog</Typography>
-              <TableContainer component={Paper} elevation={0} sx={{ border: '1px solid', borderColor: 'divider', borderRadius: 2 }}>
+            <CardContent sx={{ p: { xs: 2, sm: 3 } }}>
+              <Typography variant="h6" sx={{ fontWeight: 700, mb: 3 }}>Product Catalog</Typography>
+              <TableContainer component={Paper} elevation={0} sx={{ borderRadius: 3, border: '1px solid', borderColor: alpha(theme.palette.divider, 0.5), overflow: 'hidden' }}>
                 <Table sx={{ minWidth: 650 }} aria-label="products table">
                   <TableHead>
-                    <TableRow sx={{ backgroundColor: 'action.hover' }}>
-                      <TableCell sx={{ fontWeight: 600 }}>Product Name</TableCell>
-                      <TableCell sx={{ fontWeight: 600 }}>Details</TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 600 }}>Price</TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 600 }}>Sold</TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 600 }}>Stock</TableCell>
-                      <TableCell sx={{ fontWeight: 600 }}>Reviews</TableCell>
-                      <TableCell sx={{ fontWeight: 600 }}>URL</TableCell>
+                    <TableRow sx={{ bgcolor: alpha(theme.palette.primary.main, 0.04) }}>
+                      <TableCell sx={{ fontWeight: 700, color: 'text.secondary' }}>Product Name</TableCell>
+                      <TableCell sx={{ fontWeight: 700, color: 'text.secondary' }}>Details</TableCell>
+                      <TableCell align="right" sx={{ fontWeight: 700, color: 'text.secondary' }}>Price</TableCell>
+                      <TableCell align="right" sx={{ fontWeight: 700, color: 'text.secondary' }}>Sold</TableCell>
+                      <TableCell align="right" sx={{ fontWeight: 700, color: 'text.secondary' }}>Stock</TableCell>
+                      <TableCell sx={{ fontWeight: 700, color: 'text.secondary' }}>Reviews</TableCell>
+                      <TableCell sx={{ fontWeight: 700, color: 'text.secondary' }}>Action</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -603,7 +690,7 @@ export default function SalesDashboardPage() {
                         <TableCell>
                           <Stack sx={{ flexDirection: 'row', flexWrap: 'wrap', gap: 0.5 }}>
                             {product.details.map((detail, index) => (
-                              <Chip key={index} label={detail} size="small" variant="outlined" />
+                              <Chip key={index} label={detail} size="small" sx={{ borderRadius: 1, bgcolor: alpha(theme.palette.grey[500], 0.1), border: 'none' }} />
                             ))}
                           </Stack>
                         </TableCell>
@@ -611,9 +698,10 @@ export default function SalesDashboardPage() {
                         <TableCell align="right">{product.itemsSold.toLocaleString()}</TableCell>
                         <TableCell align="right">
                           <Chip 
-                            label={product.stock} 
+                            label={`${product.stock} in stock`} 
                             color={product.stock < 200 ? 'warning' : 'success'} 
                             size="small" 
+                            sx={{ fontWeight: 600, borderRadius: '8px' }}
                           />
                         </TableCell>
                         <TableCell>
@@ -636,9 +724,9 @@ export default function SalesDashboardPage() {
                           </Stack>
                         </TableCell>
                         <TableCell>
-                          <MuiLink component={Link} href={product.productUrl} underline="hover" color="primary">
-                            View
-                          </MuiLink>
+                          <Button component={Link} href={product.productUrl} variant="outlined" size="small" sx={{ borderRadius: 2, textTransform: 'none' }}>
+                            View Details
+                          </Button>
                         </TableCell>
                       </TableRow>
                     ))}
@@ -650,5 +738,6 @@ export default function SalesDashboardPage() {
         </Grid>
       </Grid>
     </Box>
+    </Fade>
   );
 }
